@@ -1,0 +1,291 @@
+body {
+    font-family: sans-serif;
+    color: white;
+    background-color: lightslategrey;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%; /* Fit content to the full viewport width */
+    overflow-y: scroll;
+    object-fit: cover;
+}
+.main-header nav div {
+    display: flex;
+}
+.main-header nav div div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    margin-left: 620px;
+}
+.main-header nav div div h2 {
+    display: flex;
+    margin-left: 9px;
+    color: white;
+}
+.main-header nav div div h2:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+.main-header {
+    border-radius: 20px;
+    align-items: center;
+}
+.main-body {
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-top: 75px;
+}
+.identity {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+.main-body div b {
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 20px;
+}
+.container {
+    background-color: black;
+    max-width: 100%;
+}
+div p {
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.resume button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    border-style: none;
+    border-radius: 15px;
+    width: 200px;
+}
+.resume {
+    justify-content: center;
+    display: flex;
+}.resume button h3 {
+    text-transform: uppercase;
+    transition: text-shadow 0.5s ease;
+
+}
+.resume button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px #3809d3, 0 0 50px #0808e1;
+    transform: translateY(-5px);
+
+}
+.resume button:hover::before {
+    height: 30px;
+    width: -30px;
+}
+.about-me {
+    /* background-color: darkslategray; */    
+}
+.about-me section img {
+    border-radius: 50%;
+    border: 4px solid rgba(14, 249, 249, 0.9);
+    border-style: double;
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+   margin-left: 200px; 
+}
+.about-me section p{
+    justify-content: space-around;
+    display: flex;
+    object-fit: cover;
+    width: 100% ;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin-inline: 100px;
+    line-height: 25px;
+    
+}
+.about-me h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    color: aqua;
+    margin-top: 50px;
+}   
+.education {
+    max-width: 100%;
+    max-height: 100%;
+}
+.education h3 {
+    display: flex;
+    justify-content: center;
+    color: aqua;
+}
+.education .education-history {
+    display: flex;
+    padding: 50px; 
+    justify-content: space-between;
+    width: 80%;
+    background-color: rgb(46, 42, 42);
+    height: 180px;
+    margin: auto;
+    margin-bottom: 25px;
+
+}
+.education .education-history div:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.education .education-history div {
+   border: 1px solid brown;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   padding: 40px;
+   max-width:100%;
+   max-height: 100%;
+   border-style: none;
+   background-color: rgb(29, 27, 27);
+   height: 100px;
+  
+}
+.education .education-history div b {
+    color: orange;
+    text-transform: uppercase;
+}
+.education .education-history div p {
+    color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: normal;
+}
+hr {
+    color: aqua;
+    margin-top: 30px;
+    height: 0.9px;
+    max-width: 90%;
+    background-color: white;
+}
+.skills h2 {
+    display: flex;
+    justify-content: center;
+    color:aqua;
+}
+.skills ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    flex-wrap: wrap;
+    
+}
+.skills ul li {
+    border: 1.7px solid rgb(63, 88, 75);
+    width: 200px;
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    border-style: double;
+    color: rgb(97, 49, 84);
+    font-weight: 600;
+    background-color: white;
+    margin: 10px;
+}
+/* .skills ul li:not(:nth-child(3)) {
+    background-color: blanchedalmond;
+} */
+.skills ul li:hover {
+    cursor: pointer;
+    background-color: rgb(242, 95, 95);
+    color: rgb(51, 51, 246);
+}
+.softwares h2 {
+   display: flex;
+   justify-content: center;
+   color:aqua;
+}
+.softwares ul li {
+    border: 1.7px solid rgb(245, 248, 246);
+    width: 200px;
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    border-style: double;
+    color: rgb(245, 240, 240);
+    font-weight: 600;
+    background-color: rgb(10, 10, 10);
+    transition:   1s ease;
+    margin: 10px;
+}
+.softwares ul {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+}
+.softwares ul li:hover {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(1, 1, 12);
+    box-shadow: 0 0 20px #f8f8f8, 0 0 50px #f5f5f7;
+}
+footer .promise {
+    border: 2px solid rgb(77, 55, 149);
+    width: 90%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(20, 19, 19);
+    color: blue;
+    font-weight: 750;
+    font-size: 19px;
+}
+footer .media-links {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 15px;
+    color: rgb(254, 249, 249);
+    font-size: 35px;
+    background: #000000;
+    transition: text-shadow 0.5 ease;
+}
+footer .media-links i {
+    border-radius: 50px;
+    border: 1px solid;
+    border-style: none;
+    color: rgb(255, 255, 255);
+}
+footer .media-links i .fa-github:hover {
+color: black;
+}
+footer .media-links .fa-whatsapp:hover {
+color: green;
+}
+footer .media-links .fa-linkedin:hover {
+color: blue;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 10px;
+}
